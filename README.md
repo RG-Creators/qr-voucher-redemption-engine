@@ -9,7 +9,7 @@ An enterprise-ready, high-performance QR code voucher generation, camera scannin
 
 ---
 
-## ?? System Architecture
+## 🏗️ System Architecture
 
 ```
 +--------------------------------------------------------------------------+
@@ -40,7 +40,7 @@ An enterprise-ready, high-performance QR code voucher generation, camera scannin
 
 ---
 
-## ? Key Highlights
+## ⚡ Key Highlights
 
 - **Cryptographic QR Tokens**: 64-character SHA-256 unique hashed tokens generated per voucher to eliminate predictability and counterfeit attacks.
 - **Atomic Double-Spend Prevention**: Strict database transactions with conditional row updates (`WHERE is_redeemed = 0`) preventing race-condition multi-claims.
@@ -50,7 +50,7 @@ An enterprise-ready, high-performance QR code voucher generation, camera scannin
 
 ---
 
-## ?? Tech Stack
+## 🛠️ Tech Stack
 
 - **Backend**: Core PHP 8.2+ (PDO Prepared Statements, OpenSSL Random Generation)
 - **Frontend**: Tailwind CSS, HTML5 Canvas QR Rendering, FontAwesome 6, Poppins Typography
@@ -58,7 +58,7 @@ An enterprise-ready, high-performance QR code voucher generation, camera scannin
 
 ---
 
-## ?? Installation & Local Development
+## 🚀 Installation & Local Development
 
 1. **Clone the Repository**:
    ```bash
@@ -85,7 +85,7 @@ An enterprise-ready, high-performance QR code voucher generation, camera scannin
 
 ---
 
-## ?? Security Hardening
+## 🔒 Security Hardening
 
 - 100% Parameterized PDO queries with `PDO::ATTR_EMULATE_PREPARES => false`.
 - Strict direct-access prevention via `APP_RUNNING` constant checks across all config and API scripts.
@@ -93,5 +93,5 @@ An enterprise-ready, high-performance QR code voucher generation, camera scannin
 
 ---
 
-## ?? License
+## 📄 License
 This repository is open-sourced under the [MIT License](LICENSE).
